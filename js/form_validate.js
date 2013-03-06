@@ -31,7 +31,7 @@ function validate_form_JSON(msg)
 	var obj = jQuery.parseJSON(msg);
 	
 	//set background color of all text boxes to white
-	$('input[type="text"]').css('background-color', '#fff');
+	$('input[type="text"], input[type="password"]').css('background-color', '#fff');
 	
 	if(obj.error)
 	{
